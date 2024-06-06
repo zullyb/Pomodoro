@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EG+Garamond:wght@400;500;600;700&family=Fira+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Pomodoro App</title>
+</head>
+<body>
+    <h1 class="app-title">Pomodoro App</h1>
+    <div class="app-container">
+        <!-- Box for pomodoro, short break, and long break buttons -->
+        <div class="button-container">
+            <div class="capsule-box">
+                <button class="btn-pomodoro">Pomodoro</button>
+                <button class="btn-short-break">Short Break</button>
+                <button class="btn-long-break">Long Break</button>
+            </div>
+        </div>
+        <!-- Box for the timer -->
+        <div class="timer-container">
+            <div class="timer-box">
+                <div class="app-circle">
+                    <div class="circle-shape">
+                        <div class="semi-circle right-side circle-mask"></div>
+                        <div class="semi-circle right-side circle"></div>
+                        <div class="semi-circle left-side circle-mask"></div>
+                        <div class="semi-circle left-side circle"></div>
+                    </div>
+                    <div class="app-counter-box">
+                        <p><span class="minutes">25</span>:<span class="seconds">00</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Box for start and pause buttons -->
+        <div class="button-container">
+            <div class="capsule-box">
+                <button class="btn-start">Start</button>
+                <button class="btn-pause">Pause</button>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+</html>
